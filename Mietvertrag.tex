@@ -1,0 +1,758 @@
+\documentclass{scrreprt}[12pt,a4paper,twoside,duplex]
+\usepackage[twoside,rmargin=1.8cm,lmargin=1.8cm,tmargin=2cm]{geometry}
+\usepackage{scrjura}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{wasysym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{multicol}
+\setlength\columnsep{2em} %Spacing between columns
+
+%Font
+%\usepackage{avantgar}
+\usepackage{bookman}
+%\usepackage{ncntrsbk}
+
+\definecolor{zuBearbeiten}{RGB}{255, 0, 0}
+% Wenn bearbeitet folgendes verwenden
+%\definecolor{zuBearbeiten}{RGB}{0, 0, 0}
+
+\newcommand{\vermieter}{\textcolor{zuBearbeiten}{Max Mustermann}}
+\newcommand{\vermieterAddresse}{\textcolor{zuBearbeiten}{Musterstrasse 17, 80809 M\"unchen}}
+\newcommand{\vermieterBankname}{\textcolor{zuBearbeiten}{Stadtsparkasse M\"unchen}}
+\newcommand{\vermieterIBAN}{\textcolor{zuBearbeiten}{DE19 1234 1234 1234 1234 12}}
+\newcommand{\vermieterBIC}{\textcolor{zuBearbeiten}{SSKMDEMMXXX}}
+\newcommand{\vermieterMahnkosten}{\textcolor{zuBearbeiten}{15,--}}
+\newcommand{\mieter}{\textcolor{zuBearbeiten}{Erika Gabler}}
+\newcommand{\mieterAdresse}{\textcolor{zuBearbeiten}{Heidestrasse 17, 51147 K\"oln}}
+\newcommand{\mietObjekt}{\textcolor{zuBearbeiten}{\textsl{Anhalterweg 42, 424242 Beteigeuze, 1.\,OG Mitte}}}
+\newcommand{\mietBeginn}{\textcolor{zuBearbeiten}{XX.XX.20XX}}
+\newcommand{\mietWaehrung}{\textcolor{zuBearbeiten}{EUR}}
+\newcommand{\mietPreisKalt}{\textcolor{zuBearbeiten}{1000,--}}
+\newcommand{\mietNebenkosten}{\textcolor{zuBearbeiten}{300,--}}
+\newcommand{\mieteGesamt}{\textcolor{zuBearbeiten}{1300,--}}
+\newcommand{\mietKaution}{\textcolor{zuBearbeiten}{3900,--}}
+\newcommand{\betriebskostenZuletztErmitteltAm}{\textcolor{zuBearbeiten}{XX.XX.20XX}}
+\newcommand{\kleinreparaturBagatellschadenBetrag}{\textcolor{zuBearbeiten}{100,--}}
+\newcommand{\kleinreparaturBagatellschadenBetragObergrenze}{\textcolor{zuBearbeiten}{250,--}}
+\newcommand{\vertragsschlussDatum}{\textcolor{zuBearbeiten}{XX.XX.20XX}}
+\newcommand{\vertragsschlussOrt}{\textcolor{zuBearbeiten}{Hamburg}}
+
+% BEGIN FORMAT
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+\sloppy
+% END FORMAT
+
+\begin{document}
+
+\chapter*{Mietvertrag}
+
+Zwischen \textsl{\vermieter, \vermieterAddresse} als \textbf{Vermieter} und
+\textsl{\mieter}, derzeit wohnhaft in \textsl{\mieterAdresse} als
+\textbf{Mieter} wird folgender Mietvertrag vereinbart:
+
+\begin{contract}
+\Clause{title=Mietsache}
+\label{mietsache:Raeume}
+
+\begin{enumerate}
+  \item Vermietet werden im Haus \mietObjekt, folgende Räume:
+\\\\
+\textcolor{zuBearbeiten}{2 Zimmer, 1 Kammer, 1 Küche, 1 Korridor/Diele, 1 Toilette mit Dusche, 1 Balkon,
+1 Kellerraum (Nr.\,42), 1 PKW-Stellplatz in der Tiefgarage (Nr.\,21.42)
+\\\\
+% \begin{itemize}
+%   \item 2 Zimmer
+%   \item 1 Kammer
+%   \item 1 Küche
+%   \item 1 Korridor/Diele
+%   \item 1 Toilette mit Bad
+%   \item 1 Balkon
+%   \item 1 Kellerraum (Nr.\,5)
+%   \item 1 PKW-Stellplatz (Nr.\,2.14)
+% \end{itemize}
+mit einer Wohnfläche von \textsl{60 $m^2$}}.
+\item Herd und Öfen werden nicht mitvermietet.
+\item Die nachstehend aufgeführten Einrichtungen dürfen nach Maßgabe der
+Benutzungsordnung mitbenutzt werden:
+
+\begin{itemize}
+  \color{zuBearbeiten}
+  \item 1 kompl. Einbauküche
+\end{itemize}
+\item Der Vermieter verpflichtet sich, dem Mieter bei Übergabe der Mieträume
+folgende Schlüssel auszuhändigen:
+\begin{itemize}
+  \color{zuBearbeiten}
+  \item 3 Hausschlüssel
+  \item 5 Zimmerschlüssel
+  \item 2 Hausbriefkastenschlüssel
+  \item 2 Waschmaschinenschlüssel
+\end{itemize}
+Die Beschaffung weiterer Schlüssel durch den Mieter bedarf der Einwilligung des
+Vermieters.
+\item Die Mieträume dürfen vom Mieter nur zu Wohnzwecken genutzt werden. Die
+Gesamtzahl der Personen, die die Wohnung beziehen werden beträgt \textsl{1}.
+Der Mieter ist verpflichtet, seiner gesetzlichen Meldepflicht nachzukommen. Die
+Anbringung von Schildern, Werbung, Automaten und dergleichen außerhalb der
+Mieträume bedarf der vorherigen schriftlichen Einwilligung des Vermieters.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Mietzeit}
+
+\begin{enumerate}
+  \item\label{mietZeit:mietStart} Das Mietverhältnis beginnt am
+  \textsl{\mietBeginn}, es läuft auf \textbf{unbestimmte Zeit}. Kün\-di\-gungs\-fris\-ten siehe \textsl{\ref{mietZeit:fristen}}.
+  \item\label{mietZeit:fristen} Kün\-di\-gungs\-fris\-ten zu
+  \textsl{\ref{mietZeit:mietStart}}:\\\\
+  Die Kün\-di\-gungs\-frist beträgt für den Mieter 3 Monate, für den Vermieter\\
+  \begin{description}
+    \item[3 Monate] wenn seit der Überlassung des Wohnraums weniger als 5 Jahre
+    vergangen sind,
+    \item[6 Monate] wenn seit der Überlassung des Wohnraums 5 Jahre vergangen
+    sind,
+    \item[9 Monate] wenn seit der Überlassung des Wohnraums 8 Jahre vergangen
+    sind,
+  \end{description}
+  jeweils zum Ende eines Kalendermonats.
+  \item Die Kündigung muss schriftlich bis zum dritten Werktag des ersten Monats
+  der Kündigung erfolgen, durch den Vermieter unter Angabe sämtlicher
+  Kün\-di\-gungs\-grün\-de und unter Hinweis auf das binnen einer Frist von 2 Monaten
+  vor Beendigung des Mietverhältnisses schriftlich auszuübende Widerspruchsrecht.
+  Für die Rechtzeitigkeit ist der Zugang der Kündigung maßgeblich.
+  \item Wird die Mietsache zu Mietbeginn nicht übergeben, so kann der Mieter Schadenersatz verlangen, wenn der Vermieter die Verzögerung zu vertreten hat. Die Rechte des Mieters zur Mietminderung oder zur fristlosen Kündigung bleiben unberührt.
+ \item Das Mietverhältnis verlängert sich auf unbestimmte Zeit, wenn der Mieter nach dem Ablauf der Mietzeit den Gebrauch der Mietsache fortsetzt und keine der Vertragsparteien den entgegenstehenden Willen innerhalb von 2 Wochen dem anderen Teil erklärt (§ 545 BGB).
+ \item Setzt der Mieter nach Ablauf der Mietzeit den Gebrauch fort, so hat er als Nutzungsentschädigung die ortsübliche Miete, mindestens die zuletzt vereinbart gewesene Miete, zu zahlen. Die Geltendmachung eines darüber hinausgehenden Schadens bleibt vorbehalten.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Miete und Nebenkosten}
+
+\begin{enumerate}
+  \item Die \textbf{Netto-Kaltmiete} (ausschließlich Betriebskosten, Heizung und Warmwasser) beträgt: \textbf{\mietWaehrung\ \mietPreisKalt}
+  \item Neben der Miete sind monatlich zu entrichten:
+    \begin{itemize}
+      \item Betriebskostenvorschuss für Betriebskosten gemäß Abs.
+      \ref{betriebskosten}: \textbf{\mietWaehrung\ \mietNebenkosten}
+    \end{itemize}
+  \item \textbf{Insgesamt sind zzt.\ monatlich zu zahlen: \mietWaehrung\ \mieteGesamt}
+  \item\label{betriebskosten} Die Betriebskosten gemäß Betriebskostenverordnung
+  in der jeweils geltenden Fassung, ermittelt aufgrund der letzten Berechnung
+  des Vermieters vom \textsl{\betriebskostenZuletztErmitteltAm}.\\
+  \\
+  Die Betriebskosten, insbesondere wie nachfolgend spezifiziert, sind als
+  Vorschuss vom Mieter an den Vermieter zu zahlen. Die Abrechnung mit dem Mieter
+  erfolgt jährlich. Die nachfolgende Spezifikation gilt auch bei Vereinbarung
+  einer Betriebskostenpauschale. Die Umlegung der Kosten für Sammelheizung und
+  Warmwasserversorgung ist in \ref{sammelHeizungUndWarmwasserversorgung} dieses
+  Vertrages vereinbart.
+  \begin{multicols}{2}
+    \begin{enumerate}[label*=\arabic*\,)]
+      \item Die laufenden öffentlichen Lasten des Grundstücks, insbesondere
+      Grundsteuer
+      \item Die Kosten der Wasserversorgung
+      \item Die Kosten der Entwässerung
+      \item Die Kosten des Betriebs des Per\-so\-nen- oder La\-sten\-auf\-zugs
+      \item Die Kosten der Strassenreinigung
+      \item Die Kosten der Ge\-bäu\-de\-rei\-ni\-gung und Ungezieferbekämpfung
+      \item Die Kosten der Gartenpflege
+      \item Die Kosten der Beleuchtung
+      \item Die Kosten der Schornsteinreinigung
+      \item Die Kosten der Sach- und Haft\-pflicht\-ver\-si\-che\-rung
+      \item Die Kosten für den Hauswart
+      \item Die Kosten des Betriebs der Gemeinschafts-Antennenanlage oder der mit
+      einem Breitbandkabelnetz verbundenen privaten Verteilanlage
+      \item Die Kosten der Dachrinnenreinigung
+      \item Sonstige Betriebskosten
+      \item Umlageausfallwagnis
+      \item Heizung und Warmwasserversorgung
+    \end{enumerate}
+  \end{multicols}
+  \item Soweit sich Betriebskosten erhöhen oder neu entstehen, darf der
+  Vermieter die Erhöhung bzw. die neu entstandenen Betriebskosten nach den
+  gesetzlichen Vorschriften anteilig umlegen. Der Vermieter kann den monatlichen
+  Vorschuss auf die Betriebskosten entsprechend anpassen, insbesondere, wenn
+  sich aus der letzten Abrechnung ein Vorauszahlungsfehlbetrag ergeben hat.
+  \item Im Fall der Vereinbarung einer Betriebskostenpauschale ist der Vermieter
+  gem. § 560 Abs. (1) BGB berechtigt, Erhöhungen der Betriebskosten durch
+  Erklärung in Textform anteilig auf den Mieter umzulegen. Die Erklärung ist nur
+  wirksam, wenn in ihr der Grund für die Umlage bezeichnet und erläutert wird.
+  \item Der Vermieter hat die Änderung dem Mieter mitzuteilen. Ein sich
+  ergebender Saldo, auch soweit er auf der Abrechnung der Vorschüsse beruht,
+  ist mit der nächsten Mietzahlung auszugleichen.
+  \item Die Schönheitsreparaturen übernimmt der Mieter auf eigene Kosten.
+  Die Schön\-heits\-re\-pa\-ra\-tu\-ren umfassen insbesondere:
+  Anstrich und Lackieren der Innentüren sowie der Außentüren und Fenster von
+  innen sowie sämtlicher Holzteile, Versorgungsleitungen und Heizkörper, das
+  Weißen der Decken und Oberwände sowie der wischfeste Anstrich bzw. das
+  Tapezieren der Wände. Der Verpflichtete hat die
+  Schön\-heits\-re\-pa\-ra\-tu\-ren regelmäßig und fachgerecht vorzunehmen.
+  % \item Als angemessene Zeitabstände für Schön\-hei\-ts\-re\-pa\-ra\-tu\-ren
+  % gelten in der Regel:
+  %     \begin{description}
+  %       \item[Küchen, Bäder und Duschen] alle 10 Jahre
+  %       \item[Wohn- und Schlafräume, Flure, Dielen und Toiletten] alle 10 Jahre.
+  %       \item[Andere Nebenräume] alle 10 Jahre.
+  %     \end{description}
+  \item Der Vermieter ist berechtigt, nach Maßgabe der gesetzlichen Bestimmungen
+   die Zustimmung zur Erhöhung der Miete jeweils nach Ablauf eines Jahres zum
+   Zweck der Anpassung an die geänderten wirtschaftlichen Verhältnisse auf dem
+   Wohnungsmarkt zu verlangen.
+   \item Bei preisgebundenem Wohnraum gilt die jeweils gesetzlich zulässige
+   Miete als vereinbart.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Zahlung der Miete und der Nebenkosten}
+  \begin{enumerate}
+    \item Die Miete und Nebenkosten sind monatlich im Voraus, spätestens am 3.
+    Werktag des Monats kostenfrei an den Vermieter zu zahlen. Hiervon abweichend
+    ist die erste Miete jedoch spätestens bei Übergabe der Wohnung (Aushändigung
+    der Schlüssel) zu zahlen. Für die Rechtzeitigkeit der Zahlung kommt es nicht
+    auf die Absendung, sondern auf die Ankunft des Geldes an.
+    \item Die Miete und die Nebenkosten sind auf das folgende Konto einzuzahlen:
+    \begin{description}
+      \item[Kontoinhaber] \vermieter
+      \item[Bank] \vermieterBankname
+      \item[IBAN] \vermieterIBAN
+      \item[BIC] \vermieterBIC
+    \end{description}
+    \item Bei verspäteter Zahlung kann der Vermieter Mahnkosten in Höhe von
+    \textbf{\mietWaehrung\ \vermieterMahnkosten}\ je Mahnung, unbeschadet von
+    Verzugszinsen, erheben. Bei Mahnkosten und Verzugszinsen handelt es sich um
+    pauschalierten Schadensersatz. Der Mieter kann nachweisen, dass ein
+    niedrigerer Schaden entstanden ist.
+  \end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Zustand und Übergabe der Mieträume}
+\begin{enumerate}
+  \item Der Vermieter gewährt den Gebrauch der Mietsache in dem Zustand bei
+  Übergabe.
+  \item Die verschuldensunabhängige Haftung des Vermieters für anfängliche
+  Sachmängel (§ 536 a BGB) wird dem Vermieter vom Mieter erlassen.
+  \item Die Aushändigung der Wohnungsschlüssel und damit die Übergabe der
+  Wohnung erfolgt, sofern nichts anderes schriftlich vereinbart wurde, bei
+  Zahlung der ersten Miete.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Sammelheizung und Warmwasserversorgung}
+\label{sammelHeizungUndWarmwasserversorgung}
+\begin{enumerate}
+  \item Eine vorhandene Zentralheizungsanlage wird, soweit es die
+  Außentemperatur erfordert, mindestens aber vom 1.10. bis zum 30.4.
+  (Heizperiode) vom Vermieter in Betrieb gehalten. Eine Temperatur von
+  mindestens 20 Grad Celsius In der Zeit von 7 bis 22 Uhr in den an die
+  Sammelheizung angeschlossenen Wohnräumen gilt als Richtwert. Für Räume, die
+  auf Wunsch des Mieters oder durch diesen mittels Umbaus oder Ausbaus geändert
+  sind, kann eine Erwärmung auf 20 Grad Celsius nicht verlangt werden. Außerhalb
+  der Heizperiode wird die Sammelheizung in Betrieb genommen, soweit es die
+  Außentemperaturen erfordern. Dabei ist zu berücksichtigen, dass während der
+  Sommermonate Instandhaltungs- und Wartungsarbeiten durchgeführt werden müssen.
+  \item Ist eine zentrale Warmwasserversorgungsanlage vorhanden, so ist vom
+  Vermieter eine Durchschnitts-Temperatur des Wassers einzuhalten, die an den
+  Zapfstellen 40 Grad Celsius nicht unterschreitet.
+  \item Vom Vermieter nicht zu vertretende Betriebsunterbrechungen der Heizungs-
+  und Warmwasserversorgung berechtigen den Mieter nicht zu
+  Schadenersatzansprüchen.
+  \item Die Betriebskosten der Heizung und Warmwasserversorgung sind in der
+  vereinbarten Miete nicht enthalten. Sie werden vom Vermieter auf die
+  angeschlossenen Wohnungen umgelegt. Zu den Betriebskosten gehören insbesondere
+  die Kosten der Brennstoffe, für die Anfuhr der Brennstoffe, für elektr. Strom,
+  für die Wartung und Reinigung der Anlage einschließlich des Schornsteins und
+  für die technische Überwachung der Anlage. Ferner gehören zu den
+  Betriebskosten die Kosten für die Bedienung der Anlage, des Betriebs und der
+  Verwendung von Wärmezählern, Heizkostenverteilern, Warmwasserzählern und/oder
+  Warmwasserkostenverteilern. Wenn der Vermieter die Anlage selbst bedient, so
+  kann er hierfür einen angemessenen Betrag mit umlegen. Ist die Wohnung an eine
+  Fernheizung angeschlossen, so sind auch die an die Fernheizungsgesellschaft zu
+  zahlenden Beträge umlegbar. Bei einer vorhandenen zentralen
+  Warmwasserversorgungsanlage rechnen auch die Kosten des Wasserverbrauchs zu
+  den umlegbaren Betriebskosten.
+  \item Die Betriebskosten werden vom Vermieter entsprechend der
+  Heizkostenverordnung umgelegt, d.\,h. nach Wohn- oder Nutzfläche oder nach dem
+  umbauten Raum der beheizten Fläche und nach einem dem Energieverbrauch
+  rechnungtragenden Maßstab. Werden Wärmezähler, Heizkostenverteiler,
+  Warmwasserzähler und/oder Warmwasserkostenverteiler verwandt, so wird ein
+  fester Anteil der Kosten nach dem Verbrauch aufgeteilt, nämlich \textsl{30/70}
+  v.\,H. \footnote{mindestens 50 v.\,H., höchstens 70 v.\,H. (§ 7 Heizkosten-VO.
+  vom 20.01.1989).}
+  \item Für die Betriebskosten der zentralen Heizungs- und Warmwasserversorgung
+  sind monatlich Vorauszahlungen, deren Höhe der Vermieter festsetzt, zu
+  leisten, über die nach Schluss der Heizperiode abzurechnen ist.
+  \item Ist ein Durchlauferhitzer oder Boiler zur Warmwasserbereitung oder/und
+  eine separate Etagenheizung in der Wohnung vorhanden, so trägt der Mieter
+  gemäß Betriebskostenverordnung sämtliche Betriebs-, Wartungs- und
+  Reinigungskosten. Die Wartung und Reinigung erfolgen jährlich.
+  \item Die vorstehenden Vereinbarungen gelten sinngemäß bei Lieferung von
+  Fe\-rn\-wä\-r\-me\,/\,Fe\-rn\-wa\-rm\-wa\-ss\-er.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Benutzung der Aufzugsanlagen}
+
+Der Mieter ist berechtigt, vorhandene Aufzugsanlagen mitzubenutzen. Der Mieter
+hat keinen Anspruch auf ununterbrochene Leistung bei Betriebsstörungen. Der
+Mieter verpflichtet sich, den Aufzugsbestimmungen Folge zu leisten.
+Betriebsstörungen sind dem Vermieter sofort mitzuteilen.
+
+\end{contract}
+
+\begin{contract}
+\Clause{title={Benutzung der Wohnung, Untervermietung und Tierhaltung}}
+
+\begin{enumerate}
+  \item Ohne vorherige Zustimmung des Vermieters dürfen die Mieträume nicht zu
+  anderen Zwecken benutzt werden. Wird die Zustimmung erteilt, so ist der Mieter
+  zur Zahlung einer erhöhten Miete verpflichtet.
+  \item Untervermietung oder sonstige Gebrauchsüberlassung der Mieträume oder
+  Teilen davon an Dritte darf nur mit Einwilligung des Vermieters erfolgen. Bei
+  unbefugter Untervermietung kann der Vermieter verlangen, dass der Mieter
+  binnen Monatsfrist das Untermietverhältnis kündigt. Geschieht dies nicht, so
+  kann der Vermieter das Hauptmietverhältnis fristlos kündigen. Ist dem
+  Vermieter die Einwilligung zur Untervermietung nur bei einer angemessenen
+  Erhöhung der Miete zuzumuten, so kann er die Erlaubnis davon abhängig machen,
+  dass der Mieter sich mit einer solchen Erhöhung einverstanden erklärt (§ 553,
+  Abs. 2 BGB). Der Mieter haftet für alle Handlungen oder Unterlassungen des
+  Untermieters oder desjenigen, dem er den Gebrauch der Mieträume überlassen
+  hat.
+  \item Jede Änderung der Nutzung durch Dritte ist dem Vermieter sofort
+  anzuzeigen.
+  \item Jede Tierhaltung, mit Ausnahme von Kleintieren, wie z.\,B. Zierfische,
+  Ziervögel, Hamster, bedarf der Zustimmung des Vermieters. Dies gilt nicht für
+  den vo\-rü\-ber\-geh\-end\-en Aufenthalt von Tieren bis zu 1 Tag (Keine Tierhaltung).
+  Der Vermieter kann die Zustimmung verweigern, wenn eine Gefährdung oder
+  Belästigung durch das Tier nicht völlig auszuschließen ist. Eine erteilte
+  Zustimmung kann widerrufen bzw. der vorübergehende Aufenthalt untersagt
+  werden, wenn von dem Tier Störungen oder/und Belästigungen ausgehen. Der
+  Mieter haftet für alle Schäden.
+  \item Das Abstellen, Aufbewahren, Lagern usw. jeglicher Sachen, sei es auch
+  nur vo\-rü\-ber\-geh\-end, außerhalb der in \ref{mietsache:Raeume} des Mietvertrages
+  genannten Mieträume, ist untersagt.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title={Elektrizität, Gas, Wasser}}
+\begin{enumerate}
+  \item Bei Störungen oder Schäden an den Versorgungsleitungen hat der Mieter
+  für sofortige Abschaltung zu sorgen und ist verpflichtet, den Vermieter
+  sofort zu benachrichtigen.
+  \item Unregelmäßigkeiten und Änderungen der Energieversorgung, insbesondere
+  eine Abänderung der Stromspannung, führen nicht zu Ersatzansprüchen gegen den
+  Vermieter.
+  \item Wird die Strom-, Gas- oder Wasserversorgung oder die Entwässerung durch
+  einen nicht vom Vermieter zu vertretenden Umstand unterbrochen, hat der Mieter
+  keine Schadenersatzansprüche gegen den Vermieter.
+  \item Der Vermieter ist berechtigt, bei Frost nach Benachrichtigung des
+  Mieters die Frischwasserieitung zumindest in der Zeit von 22 bis 6 Uhr
+  abzustellen.
+  \item Wasser darf nur für den eigenen Bedarf entnommen werden. Eine
+  Badeeinrichtung darf nicht zu kohlensäure-, eisen- oder schwefelhaltigen
+  Bädern benutzt werden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Außenantennen -- Kabelanschluss}
+\begin{enumerate}
+  \item Soweit für Fernsehen und Rundfunk keine Ge\-mein\-schafts\-an\-ten\-ne oder kein
+  Kabelanschluss vorhanden ist, darf der Mieter auf eigene Kosten eine
+  Einzel-Außenantenne anbringen, wobei Art und Weise und Folgen in einem
+  Antennenvertrag zu regeln sind.
+  \item Der Mieter erklärt sich schon jetzt bezüglich der Mietsache mit der
+  Installation eines Kabelanschlusses bzw. einer Ge\-mein\-schafts\-an\-ten\-ne oder einer
+  Satellitenanlage einverstanden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Bauliche Maßnahmen und Verbesserungen durch den Vermieter}
+\begin{enumerate}
+  \item Der Vermieter darf Ausbesserungen und bauliche Änderungen, die zur
+  Erhaltung des Hauses oder der Mieträume oder zur Abwendung drohender Gefahren
+  oder zur Beseitigung von Schäden notwendig werden, ohne Zustimmung des Mieters
+  vornehmen.
+  \item Maßnahmen zur Erhaltung und Verbesserung der Mietsache, zur Einsparung
+  von Energie oder Wasser oder/und zur Schaffung neuen Wohnraumes hat der Mieter
+  nach den gesetzlichen Bestimmungen zu dulden (§ 554 BGB).
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Bauliche Änderungen durch den Mieter}
+\begin{enumerate}
+  \item\label{baulicheAenderungen} Bauliche Veränderungen, Um- und Einbauten, insbesondere Änderungen der
+  Installationen, Anbringung von Außenjalousien, Markisen und Blumenbrettern
+  sowie die Errichtung und Änderung von Feuerstätten nebst Ofenrohren dürfen nur
+  vorgenommen werden, wenn der Vermieter zuvor eingewilligt hat und eine etwa
+  erforderliche bauaufsichtsamtliche Einwilligung erteilt worden ist, die der
+  Mieter einzuholen hat. Kosten dürfen dem Vermieter nicht entstehen.
+  \item Der Mieter haftet für alle Schäden, die dem Vermieter oder Dritten aus
+  Maßnahmen gem. Ziffer \ref{baulicheAenderungen}. entstehen, ohne dass es des
+  Nachweises des Verschuldens bedarf.
+  \item Der Mieter trägt die Kosten der Entfernung von ihm angelegter oder
+  übernommener Leitungen und für dadurch hervorgerufene Gebäudeschäden.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Wegnahmerecht des Mieters}
+\begin{enumerate}
+  \item Der Mieter ist berechtigt, eine Einrichtung, mit der er die Mietsache
+  versehen hat, wegzunehmen. Er hat den früheren Zustand wieder herzustellen.
+  Der Vermieter kann die Beseitigung und die Wiederherstellung des früheren
+  Zustandes verlangen.
+  \item Der Vermieter kann die Ausübung des Wegnahmerechtes des Mieters durch
+  Zahlung des Zeitwertes abwenden, es sei denn, dass der Mieter ein berechtigtes
+  Interesse an der Wegnahme hat (§ 552 BGB). Bei der Bemessung des Zeitwertes
+  ist der durch die Wegnahme entstehende Wertverlust und die Kosten der
+  Herstellung des ursprünglichen Zustandes zu berücksichtigen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Instandhaltung der Mieträume}
+\begin{enumerate}
+  \item Zeigt sich ein Mangel der Mietsache oder droht eine Gefahr, so hat der
+  Mieter dem Vermieter dies zur Vermeidung seiner Schadenersatzpflicht
+  unverzüglich anzuzeigen.
+  \item Der Mieter hat die seinem unmittelbaren Zugriff unterliegenden Leitungen
+  und Anlagen für Elektrizität und Gas, die sanitären Einrichtungen, Schlösser,
+  Rollläden, Öfen, Herde, Heizkörper, Messeinrichtungen und ähnliche
+  Einrichtungen so zu benutzen und zu bedienen, dass sie nicht beschädigt und
+  nicht mehr als vertragsgemäß abgenutzt werden.
+  \item Ungezieferbefall hat der Mieter unverzüglich dem Vermieter anzuzeigen.
+  Er hat auftretendes Ungeziefer auf seine Kosten zu beseitigen, soweit er den
+  Ungezieferbefall zu vertreten hat.
+  \item Der Mieter haftet dem Vermieter für Schäden, die durch Verletzung der
+  ihm obliegenden Sorgfalts- und Anzeigepflicht entstehen, insbesondere auch,
+  wenn Ver\-sor\-gungs- und Abflussleitungen, Toiletten-, Heizungsanlagen usw.
+  unsachgemäß behandelt, die Räume unzureichend gelüftet, gereinigt oder nicht
+  ausreichend gegen Frost geschützt werden.
+  \item Der Mieter haftet für Schäden, die durch seine Angehörigen, Untermieter,
+  Besucher, Lieferanten, Arbeitnehmer, Handwerker usw. verursacht worden sind.
+  \item Der Mieter hat zu beweisen, dass Schäden in seinem ausschließlichen
+  Gefahrenbereich nicht auf seinem Verschulden oder auf dem Verschulden der
+  Personen, für die er einzustehen hat, beruhen. Etwaige Ansprüche gegen
+  schuldige Dritte tritt der Vermieter an den Mieter ab.
+  \item Die gemeinschaftlichen Einrichtungen werden vom Vermieter in einem
+  ordnungsgemäßen Zustand gehalten. Schäden hieran, für die der Mieter haftet,
+  darf der Vermieter nach vorheriger Unterrichtung des Mieters auf dessen Kosten
+  beseitigen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Kleinreparaturen}
+\begin{enumerate}
+  \item\label{kleinreparaturen:bagatellschaden} Der Mieter ist verpflichtet,
+  die Kosten für Kieinreparaturen bzw. für
+  die Behebung von Bagatellschäden zu übernehmen, soweit diese im Einzelfall der
+  Reparatur oder Bagatellschadenbehebung \textbf{\mietWaehrung\
+  \kleinreparaturBagatellschadenBetrag}\ nicht übersteigt. Die übernahme solcher
+  Kosten durch den Mieter ist je Kalenderjahr auf
+  \textbf{\mietWaehrung\ \kleinreparaturBagatellschadenBetragObergrenze}\ begrenzt.
+  \item Die Reparaturen bzw. die Behebung von Bagatellschäden im Sinne des
+  Absatzes \ref{kleinreparaturen:bagatellschaden}.\ beziehen sich auf die Teile
+  des Mietobjektes, die dem Gebrauch des Mieters dienen, nämlich: Einrichtungen
+  für Elektrizität, Wasser, Gas, Heiz- und Kocheinrichtungen, Fenster und
+  Türverschlüsse sowie Verschlusseinrichtungen für etwa vorhandene Fensterläden.
+  \item Der Mieter ist nicht verpflichtet, die Reparaturen bzw. die Behebung der
+  Bagatellschäden selbst durchzuführen oder in Auftrag zu geben. Die
+  Notwendigkeit von Reparaturen bzw. Behebung von Bagatellschäden gemäß Absatz
+  \ref{kleinreparaturen:bagatellschaden}.\ ist dem Vermieter unverzüglich nach
+  Feststellung des jeweiligen Schadens mitzuteilen.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Pfandrecht des Vermieters -- Sicherheitsleistung (Kaution)}
+\begin{enumerate}
+  \item Der Mieter erklärt, dass die beim Einzug eingebrachten Sachen sein
+  freies Eigentum, nicht gepfändet und nicht verpfändet sind.%, mit Ausnahme folgender Gegenstände
+  \item Der Mieter ist verpflichtet, den Vermieter sofort von einer etwaigen
+  Pfändung eingebrachter Gegenstände unter Angabe des Gerichtsvollziehers und
+  des pfändenden Gläubigers zu benachrichtigen.
+  \item Der Mieter leistet dem Vermieter Sicherheit (Kaution) für die Erfüllung
+  seiner Verpflichtungen und/oder zur Befriedigung von Schadensersatzansprüchen
+  in Höhe bis zu drei Monatsmieten ohne Betriebskostenvorschüsse, nämlich in
+  Höhe von \textbf{\mietWaehrung\ \mietKaution}. Der Vermieter hat die Sicherheit,
+  getrennt von seinem Vermögen, bei einem Kreditinstitut zu dem für Spareinlagen
+  mit drei monatiger Kündigungsfrist üblichen Zinssatz anzulegen. Die Zinsen
+  erhöhen die Sicherheit.
+  \item Der Mieter kann die Sicherheit in drei gleichen monatlichen Raten
+  zahlen. Die erste Rate ist fällig bei Beginn des Mietverhäitnisses
+  (§ 551 BGB).
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Betreten der Mieträume durch den Vermieter}
+\begin{enumerate}
+  \item\label{betreten:ablesen} Der Vermieter kann die Mieträume nach rechtzeitiger Ankündigung
+  besichtigen, sei es zur Prüfung des Zustandes, zum Ablesen von Messgeräten
+  oder aus anderen wichtigen Gründen. In Fällen dringender Gefahr gestattet der
+  Mieter hiermit das Betreten der Mieträume unwiderruflich zu jeder Tages- und
+  Nachtzeit.
+  \item\label{betreten:verkaufen} Will der Vermieter das Grundstück verkaufen
+  oder ist das Mietverhältnis gekündigt, so darf der Vermieter zusammen mit dem
+  Kaufinteressenten oder Mietbewerber die Mieträume in angemessenem Maße
+  betreten.
+  \item Der Mieter hat sicherzustellen, dass der Vermieter sein Recht zur
+  Besichtigung gemäß Abs.\,\ref{betreten:ablesen}.\ und
+  \ref{betreten:verkaufen}.\ auch bei Abwesenheit des Mieters wahrnehmen kann.
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Besondere Kündigungsgründe und -fristen}
+\begin{enumerate}
+  \item Das Mietverhältnis kann, soweit die vorzeitige Kündigung mit
+  gesetzlicher Frist zulässig ist, bis spätestens zum 3. Werktag eines Monats
+  zum Schluss des ü\-ber\-nä\-chst\-en Monats gekündigt werden.
+  \item Beide Mietparteien können das Mietverhältnis ohne Einhaltung einer Frist
+  kündigen, wenn der andere Vertragsteil seine Verpflichtungen nicht unerheblich
+  schuldhaft verletzt.\\
+  \\
+  Der Vermieter kann insbesondere das Mietverhäitnis ohne Einhaltung einer
+  Kün\-di\-gungs\-frist aus wichtigem Grund kündigen:
+  \begin{enumerate}
+    \item wenn der Mieter für zwei aufeinander folgende Termine mit einem Betrag
+    rückständig ist, der eine Monatsmiete übersteigt, oder
+    \item wenn der Mieter in einem Zeitraum, der sich über mehr als zwei Termine
+    erstreckt, mit einem Betrag in Höhe von zwei Monatsmieten rückständig ist,
+    \item wenn der Mieter oder derjenige, dem er den Gebrauch der Mietsache
+    überlassen hat, ungeachtet einer Abmahnung des Vermieters den
+    vertragswidrigen Gebrauch der Mietsache fortsetzt, der die Rechte des
+    Vermieters oder eines anderen Mieters in erheblichem Maße verletzt, so dass
+    die Fortsetzung des Mietverhältnisses nicht zumutbar ist.
+  \end{enumerate}
+\end{enumerate}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Vorzeitige Beendigung der Mietzeit}
+
+Wird das Mietverhältnis durch den Vermieter aus wichtigem Grunde gekündigt, so
+haftet der Mieter für den Schaden, der dem Vermieter dadurch entsteht, dass die
+Räume nach der Rückgabe leer stehen oder nur billiger vermietet werden können,
+und zwar bis zum Ablauf der vereinbarten Mietzeit, jedoch höchstens für ein Jahr
+nach der Rückgabe.
+\end{contract}
+
+\begin{contract}
+\Clause{title=Rückgabe der Mietsache}
+
+Bei Beendigung der Mietzeit sind die Mieträume im sauberen Zustand mit allen
+Schlüsseln, auch selbst angeschafften, an den Vermieter herauszugeben;
+anderenfalls ist der Vermieter berechtigt, auf Kosten des Mieters
+Ersatzschlüssel zu beschaffen oder -- soweit dies im Interesse des Nachmieters
+erforderlich ist -- auch die Schlösser zu verändern und dazu Schlüssel zu
+beschaffen. Nach Räumung ist der Vermieter nach Ankündigung berechtigt, die
+Mietsache auf Kosten des Mieters zu öffnen, zu reinigen, zurück gelassene
+einzelne Gegenstände zu verwahren und wertloses Gerümpel zu vernichten.\\
+\\
+Dies gilt auch, falls der Mieter bereits vor Ablauf des Vertrages ganz oder
+teilweise auszieht und aus Anzahl und Beschaffenheit etwa zurückgelassener
+Gegenstände die Absicht der Aufgabe des Mietbesitzes zu erkennen ist. Der
+Vermieter ist in diesem Fall im Interesse des Mietnachfolgers berechtigt, die
+Mieträume schon vor der endgültigen Räumung in Besitz zu nehmen und ausbessern
+zu lassen.
+
+\end{contract}
+
+\begin{contract}
+\Clause{title=Mehrere Personen als Vermieter oder Mieter}
+Vermieter und/oder Mieter haften als Gesamtschuldner, sofern es sich um mehrere
+Personen handelt. Für die Wirksamkeit einer Erklärung des Vermieters genügt es,
+wenn sie gegenüber einem der Mieter abgegeben wird. Die Mieter gelten insoweit
+als gegenseitig bevollmächtigt.
+\end{contract}
+
+\begin{contract}
+\Clause{title=Hausordnung}
+
+\begin{multicols}{2}
+  Der Mieter erkennt die Hausordnung an. Ein Verstoß gegen die
+  Hausordnung ist ein vertragswidriger Gebrauch der Mietsache. In
+  schwerwiegenden Fällen kann der Vermieter nach erfolgloser Abmahnung das
+  Vertragsverhältnis ohne Einhaltung einer Kündigungsfrist kündigen. Für alle
+  Schäden, die dem Vermieter durch Verletzung oder Nichtbeachtung der
+  Hausordnung und durch Nichterfüllung der Meldepflichten entstehen, ist der
+  Mieter ersatzpflichtig.
+
+  \begin{description}[style=unboxed,leftmargin=0cm]
+    % \item[]
+    \item[Allgemeine Ordnungsbestimmungen] Der Mieter hat von der Mietsache
+    vertragsgemäß Gebrauch zu machen und sie bei Verschmutzung zu reinigen. Jede
+    Ruhestörung, besonders durch Musizieren, Rundfunk- und Fernsehempfang,
+    Benutzung von Tonwiedergabegeräten, Türen schlagen, Lärm im Treppenhaus ist
+    zu vermeiden.\\
+    Abfälle dürfen nur in die entsprechende Müll- oder Recyclingtonne geschüttet
+    werden. Daneben geschüttete Abfälle sind sofort zu beseitigen. Sperrige
+    Gegenstände muss der Mieter auf eigene Kosten entsorgen bzw. durch die
+    Sperrmüllabfuhr abholen lassen. Der Mieter hat seine Kinder ausreichend zu
+    beaufsichtigen. Aus Fenstern, von Balkonen, auf Treppenfluren darf nichts
+    ausgeschüttet, ausgegossen oder geworfen werden. Es ist nicht gestattet, auf
+    Höfen und in Durchfahrten Rad zu fahren, vor und auf dem Grundstück Tauben
+    zu füttern.\\
+    Scharf oder übel riechende, leicht entzündliche oder sonstige schädliche
+    Dinge sind sachgemäß zu beseitigen.\\
+    Brennholz darf nicht innerhalb der Wohnung, sondern nur an den vom Vermieter
+    bezeichneten Stellen zerkleinert werden. Für Verkehr, Aufstellen und Lagern
+    von Gegenständen auf und in den gemeinschaftlich genutzten Flächen und
+    Räumen, insbesondere von Fahrzeugen, ist die Einwilligung des Vermieters
+    und ggf. die behördliche Genehmigung einzuholen.\\
+    Es ist nicht gestattet, Mopeds, Motorräder und Motorroller in der Wohnung,
+    in Nebenräumen, im Treppenhaus oder im Keller abzustellen.\\
+    Das Haus ist von 20 Uhr bis 6 Uhr zum Schutz der Hausbewohner zu
+    verschließen.
+    \item[Sorgfaltspflicht des Mieters] Der Mieter ist verpflichtet:\\
+    Die Fußböden trocken zu halten und ordnungsgemäß zu behandeln, so dass keine
+    Schäden entstehen. Das Entstehen von Druckstellen ist durch
+    zweckentsprechende Untersätze zu vermeiden.\\
+    Die Gas-, Be- und Entwässerungsanlagen, die elektrische Anlage und sonstige
+    Hauseinrichtungen nicht zu beschädigen, insbesondere Verstopfungen der
+    Abwasserrohre zu verhindern sowie die Gasbrennstellen sauber zu halten und
+    Störungen an diesen Einrichtungen dem Vermieter sofort zu melden.\\
+    Die Benutzung von Geschirrspülmaschinen, Waschmaschinen und Wäschetrocknern
+    dann zu unterlassen, wenn zu befürchten ist, dass andere Mieter belästigt
+    werden. Grundsätzlich dürfen nur funktionssichere Geräte benutzt werden, die
+    fachgerecht und standortgerecht angeschlossen sind.\\
+    Türen und Fenster bei Unwetter oder Abwesenheit geschlossen zu halten.\\
+    Energie und Wasser nicht zu vergeuden.\\
+    Balkone von Schnee zu räumen und Belastungen (z.\,B. durch Brennstoffe) zu
+    unterlassen.\\
+    Kellerschächte und -fenster zu reinigen, soweit diese innerhalb des
+    Mieterkellers liegen, die Fenster bei Nacht, Nässe oder Kälte zu
+    schließen.\\
+    Die Vorschriften für die Bedienung von Aufzügen, Warmwasserbereitern,
+    Feuerungsstellen usw.\ sorgfältig zu beachten.\\
+    Alle Zubehörteile und Schlüssel sorgfältig zu behandeln und aufzubewahren.\\
+    Die Zapfhähne zu schließen, besonders bei vorübergehender Wassersperre.\\
+    Während der Heizperiode hat der Mieter dafür zu sorgen, dass durch
+    unterlassenes Heizen keine Frostschäden in der Wohnung auftreten; Türen und
+    Fenster auch von unbeheizten Räumen sind gut verschlossen zu halten. Lüften
+    ist auf das Notwendige zu beschränken.\\
+    Abwesenheit entbindet den Mieter nicht von ausreichenden
+    Frostschutzmaßnahmen.\\
+    \item[Brandschutzbestimmungen] Alle allgemeinen technischen und behördlichen
+    Vorschriften, besonders auch die bau- und feuerpolizeilichen Bestimmungen
+    (u.\,a. über die Lagerung von feuergefährlichen bzw. brennbaren Stoffen)
+    sind einzuhalten.\\
+    Nicht gestattet ist offenes Licht und Rauchen auf dem Boden und im Keller.
+    Das Lagern feuergefährlicher und leicht entzündlicher Stoffe wie Benzin,
+    Spiritus, öl, Packmaterial, Feuerwerkskörper usw. auf dem Boden und im
+    Keller, ebenso das Aufbewahren von Möbeln, Matratzen,Textilien,
+    Fotomaterial, Lacke auf dem Boden.\\
+    Größere Gegenstände sind so aufzustellen, dass die Räume zugänglich und
+    übersichtlich bleiben.\\
+    Kleinere Gegenstände sind nur in Behältnissen (Kästen, Truhen, Koffern)
+    aufzubewahren.\\
+    Der Mieter ist verpflichtet:\\
+    Die Feuerstätten in brandsicherem Zustand (auch frei von Asche und Ruß) zu
+    halten.\\
+    Dem Schornsteinfeger das Reinigen der in den Mieträumen endenden
+    Schornsteinrohre zu gestatten.\\
+    Änderungen an Feuerstätten und Abzugsrohren nur mit Einwilligung des
+    Vermieters, der zuständigen Behörden bzw. des zuständigen
+    Schornsteinfegermeisters vorzunehmen. An und unter den Feuerstellen den
+    Fußboden ausreichend zu schützen.\\
+    Nur geeignete, zulässige Brennmaterialien zu verwenden und diese sachgemäß
+    zu lagern.\\
+    Heiße Asche abzulöschen, bevor sie in die Mülltonnen geschüttet wird.\\
+    Bei Brand oder Explosion angemessene Gegenmaßnahmen einzuleiten und sofort
+    den Vermieter zu verständigen.\\
+    Gas: Bei verdächtigem Geruch sofort Hauptabsperrhähne zu schließen und
+    Installateur oder Gaswerke sowie den Vermieter zu benachrichtigen.\\
+    Bei längerer Abwesenheit den Absperrhahn am Gaszähler zu schließen.
+    \end{description}
+\end{multicols}
+\end{contract}
+
+\begin{contract}
+\Clause{title=Weitere Vereinbarungen}
+\begin{enumerate}
+  \item Sollte eine der Bestimmungen dieses Vertrages ganz oder teilweise gegen
+  zwingende gesetzliche Vorschriften verstoßen, so soll die entsprechende
+  gesetzliche Regelung an deren Stelle treten.
+  %\item Die Kaution ist bei Mietbeginn auf das Mietkonto zu überweisen.
+  %\item Die Kaution wird zu banküblichen Zinsen verzinst (Sparbuch).
+  \item Die Wohnung ist ausreichend zu belüften und zu beheizen.
+  \item Der Mülleimer muss vom Mieter besorgt werden.
+  \item Der Parkettboden und die Einbauküche sollten schonend und pfleglich
+  behandelt werden.
+  % \item Der Mieter ist verpflichtet folgende Versicherungen dem Vermieter
+  % nachzuweisen. Kopien der Policen sind dem Vermieter auszuhändigen.
+  % \begin{enumerate}
+  %   \item Private Haft\-pflicht\-ver\-si\-che\-rung
+  %   \item Hausratsversicherung
+  % \end{enumerate}
+  \item Die von den Hauseigentümern beschlossene Hausordnung hat Vorrang vor
+  derjenigen, die im Mietvertrag genannt wird.
+  \item Nach Beendigung des Mietverhältnisses ist der Mieter zu folgenden
+  Renovationsarbeiten verpflichtet:
+  \begin{description}
+    \item[Wände und Decken] fachmännisch streichen (Rauhfaser weiss), Dübel und
+    Nägel entfernen, entstandene Löcher schliessen., Teppichböden mit
+    Reinigungsgerät säubern.
+    \item[Mietsache] Im übrigen muss die Mietsache sorgfältig geputzt und
+    gereinigt zu\-rück\-ge\-ge\-ben werden. Für entstandene Schäden ist der
+    Mieter ersatzpflichtig.
+    \item[Instandhaltungskosten] Die Instandhaltungskosten der Einbauküche
+    trägt der Mieter.
+    \item[Nebenkosten] Der Mieter anerkennt die von den Wohnungseigentümern
+    beschlossenen Verteilerschlüssel zur Abrechnung der Nebenkosten.
+  \end{description}
+
+
+\end{enumerate}
+\end{contract}
+
+\vertragsschlussOrt, den \vertragsschlussDatum
+
+    \
+
+    \
+
+    \
+
+    \
+
+    \
+
+
+
+    \hrule\vspace{1ex} Vermieter
+
+    \
+
+    \
+
+    \
+
+    \
+
+    \hrule\vspace{1ex} Mieter
+
+
+    \end{document}
